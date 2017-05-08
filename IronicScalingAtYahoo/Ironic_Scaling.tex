@@ -94,7 +94,7 @@
     \setbeamercolor{background}{bg=openstack}
     \titlepage{}
     \centering
-    \href{https://github.com/sagarun/presentations/}{https://github.com/sagarun/presentations/}
+    \href{https://github.com/sagarun/presentations}{https://github.com/sagarun/presentations/}
 \end{frame}
 }
 
@@ -162,12 +162,20 @@
     \end{itemize}
 \end{frame}
 
-\section{What could possibly go wrong?}
+\begin{frame}
+\frametitle{}
+    \begin{center}
+        \includegraphics[scale=0.75]{logos/wrong2.jpg}
+    \end{center}
+\end{frame}
+
+
 
 \begin{frame}
     \frametitle{What could possibly go wrong?}
     \begin{itemize}[<+-| alert@+>]
-        \item Boots started to fail
+        \item Ironic Boots started to fail
+        \item Ironic-conductor was using lot of CPU
         \item Ironic API calls took too long
     \end{itemize}
 \end{frame}
@@ -248,7 +256,7 @@ hardware-type = 00:00:00:01
     \begin{itemize}[<+-| alert@+>]
         \item ISC DHCPD restarts are not ideal
         \item VIP thinks dhcpd is down whenever it restarts
-        \item Move to Kea DHCP Server if possible
+        \item Move to Kea DHCP Server
     \end{itemize}
 \end{frame}
 
